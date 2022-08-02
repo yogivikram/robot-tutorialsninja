@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20220726 21:57:22.040" rpa="false">
+<suite id="s1" name="Assesment Ttninja" source="C:\Users\gs-1637\PycharmProjects\robotassesment_23_09\assesment_ttninja.robot">
+<test id="s1-t1" name="TC_01_tutorial ninja">
+<kw name="open automate" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://tutorialsninja.com/demo/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20220726 21:57:22.464" level="INFO">Opening browser 'Chrome' to base url 'http://tutorialsninja.com/demo/'.</msg>
+<status status="PASS" starttime="20220726 21:57:22.464" endtime="20220726 21:57:34.475"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20220726 21:57:34.475" endtime="20220726 21:57:34.483"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220726 21:57:34.483" endtime="20220726 21:57:34.603"></status>
+</kw>
+<status status="PASS" starttime="20220726 21:57:22.464" endtime="20220726 21:57:34.603"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${myacc}</arg>
+</arguments>
+<msg timestamp="20220726 21:57:34.603" level="INFO">Clicking element '//*[@class="hidden-xs hidden-sm hidden-md" and text() = "My Account"]'.</msg>
+<status status="PASS" starttime="20220726 21:57:34.603" endtime="20220726 21:57:34.674"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${reg}</arg>
+</arguments>
+<msg timestamp="20220726 21:57:34.674" level="INFO">Clicking element '//a[contains(text(),'Register')]'.</msg>
+<status status="PASS" starttime="20220726 21:57:34.674" endtime="20220726 21:57:35.947"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fn}</arg>
+<arg>Vikram</arg>
+</arguments>
+<msg timestamp="20220726 21:57:35.947" level="INFO">Typing text 'Vikram' into text field 'input-firstname'.</msg>
+<status status="PASS" starttime="20220726 21:57:35.947" endtime="20220726 21:58:02.488"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ln}</arg>
+<arg>Sharma</arg>
+</arguments>
+<msg timestamp="20220726 21:58:02.488" level="INFO">Typing text 'Sharma' into text field 'input-lastname'.</msg>
+<status status="PASS" starttime="20220726 21:58:02.488" endtime="20220726 21:58:02.600"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${eml}</arg>
+<arg>${email_id}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:02.600" level="INFO">Typing text 'vikram.sharma1601@gslab.com' into text field 'input-email'.</msg>
+<status status="PASS" starttime="20220726 21:58:02.600" endtime="20220726 21:58:02.736"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${tel}</arg>
+<arg>9970690014</arg>
+</arguments>
+<msg timestamp="20220726 21:58:02.736" level="INFO">Typing text '9970690014' into text field 'input-telephone'.</msg>
+<status status="PASS" starttime="20220726 21:58:02.736" endtime="20220726 21:58:02.856"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,500)</arg>
+</arguments>
+<msg timestamp="20220726 21:58:02.856" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220726 21:58:02.856" endtime="20220726 21:58:02.872"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwd}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:02.872" level="INFO">Typing text 'Vikram@123' into text field 'input-password'.</msg>
+<status status="PASS" starttime="20220726 21:58:02.872" endtime="20220726 21:58:02.992"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${cnf}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:03.000" level="INFO">Typing text 'Vikram@123' into text field 'input-confirm'.</msg>
+<status status="PASS" starttime="20220726 21:58:03.000" endtime="20220726 21:58:03.128"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${agr}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:03.128" level="INFO">Selecting checkbox '//input[@name='agree']'.</msg>
+<status status="PASS" starttime="20220726 21:58:03.128" endtime="20220726 21:58:03.224"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${bprim}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:03.224" level="INFO">Clicking element '//input[@class='btn btn-primary']'.</msg>
+<status status="PASS" starttime="20220726 21:58:03.224" endtime="20220726 21:58:14.869"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${txtveri}</arg>
+</arguments>
+<assign>
+<var>${texttoverify}</var>
+</assign>
+<msg timestamp="20220726 21:58:14.909" level="INFO">${texttoverify} = Congratulations! Your new account has been successfully created!</msg>
+<status status="PASS" starttime="20220726 21:58:14.869" endtime="20220726 21:58:14.909"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${texttoverify}</arg>
+<arg>Congratulations! Your new account has been successfully created!</arg>
+</arguments>
+<status status="PASS" starttime="20220726 21:58:14.909" endtime="20220726 21:58:14.909"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${cam}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:14.909" level="INFO">Clicking element '(//*[@href="http://tutorialsninja.com/demo/index.php?route=product/category&amp;path=33" and text()="Cameras"])[1]'.</msg>
+<status status="PASS" starttime="20220726 21:58:14.909" endtime="20220726 21:58:15.836"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${d300}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:15.844" level="INFO">Clicking element '//img[@src="http://tutorialsninja.com/demo/image/cache/catalog/demo/nikon_d300_1-228x228.jpg" and @alt="Nikon D300"]'.</msg>
+<status status="PASS" starttime="20220726 21:58:15.836" endtime="20220726 21:58:28.916"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,100)</arg>
+</arguments>
+<msg timestamp="20220726 21:58:28.924" level="INFO">Executing JavaScript:
+window.scrollTo(0,100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220726 21:58:28.916" endtime="20220726 21:58:28.924"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${qty}</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20220726 21:58:28.932" level="INFO">Typing text '2' into text field 'input-quantity'.</msg>
+<status status="PASS" starttime="20220726 21:58:28.932" endtime="20220726 21:58:29.036"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${cart}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:29.036" level="INFO">Clicking element 'button-cart'.</msg>
+<status status="PASS" starttime="20220726 21:58:29.036" endtime="20220726 21:58:29.092"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${drpdwn}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:29.092" level="INFO">Clicking element '//button[@class='btn btn-inverse btn-block btn-lg dropdown-toggle']'.</msg>
+<status status="PASS" starttime="20220726 21:58:29.092" endtime="20220726 21:58:29.140"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${chkout}</arg>
+</arguments>
+<msg timestamp="20220726 21:58:29.140" level="INFO">Clicking element '//strong[contains(text(),'Checkout')]'.</msg>
+<status status="PASS" starttime="20220726 21:58:29.140" endtime="20220726 21:58:31.666"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${pfn1}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20220726 21:58:42.907" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220726 21:58:41.948" endtime="20220726 21:58:42.907"></status>
+</kw>
+<msg timestamp="20220726 21:58:43.011" level="FAIL">Element 'input-payment-firstname' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220726 21:58:31.666" endtime="20220726 21:58:43.011"></status>
+</kw>
+<status status="FAIL" starttime="20220726 21:57:22.464" endtime="20220726 21:58:43.011" critical="yes">Element 'input-payment-firstname' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20220726 21:57:22.040" endtime="20220726 21:58:43.011"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Assesment Ttninja">Assesment Ttninja</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
